@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bulls and Cows</h1>
+    <p id="startsGame">R :1 | V : 0 | D : 0</p>
+    <input type="number" id="guessInput" min="111" max="999" placeholder="ex: 4512" onkeydown="if(event.keyCode === 13) {document.getElementById('submitbutton').click()}">
+    <input type="submit" name="sumbit" id="submitbutton" value="Guess" onclick="checkGuess()">
+    <input type="submit" name="sumbit" id="rulesbutton" value="Règle" onclick="printRules()">
+    <input type="submit" name="sumbit" id="clearbutton" value="Clear" onclick="clearLogs()">
+    <h2>Logs</h2>
+    <textarea name="message" id="logsArea" cols="50" rows="17" readonly="true"></textarea>
+</body>
+</html>
